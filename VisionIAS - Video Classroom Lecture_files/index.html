@@ -1,0 +1,170 @@
+
+<!-- saved from url=(0063)https://vod.visionias.in/player/index.php?id=538120231115093000 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>VisionIAS VoD Player</title>
+		<link rel="stylesheet" href="./style.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="./mobile.css" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">              
+		<link href="./css2" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	</head>
+	<body>
+	<div class="error_container"></div>
+    <div id="root_container" class="root_container" style="width: 100%;height:100%;">
+        <video id="video" autoplay="" poster="img/poster.jpg" src="blob:https://vod.visionias.in/ec9ff670-36e4-4e2a-8374-0142b4947e26"></video>
+       
+    <div class="root_controller-container">
+
+       <div class="menu_container remove_setting_container">
+
+       <div class="pallate_creater_holder" id="setting_buttons-holder">
+                            <h1>Settings</h1>
+                 
+                            <div class="options">
+
+                                <div class="speedspinner">
+                                <div class="color_picker_button light_theme_color ">
+                                
+    <svg class="create_icon">
+    <use xlink:href="img/svg/sprite.svg#icon-meter"></use></svg>
+     Speed  </div>  
+                                <input type="number" min=".75" max="3.0" step=".25" value="1" id="speedplayback" class="light_theme_color">
+                                </div>
+                                <button id="qualityMenu" class="color_picker_button light_theme_color"> 
+    <svg class="create_icon">
+    <use xlink:href="img/svg/sprite.svg#icon-settings"></use></svg>
+      Quality </button>
+                                <button id="lock" class="color_picker_button light_theme_color"> 
+    <svg class="create_icon">
+    <use xlink:href="img/svg/sprite.svg#icon-pushpin"></use></svg>
+     lock screen </button>
+                                <button id="reloadPlayer" class="color_picker_button light_theme_color"> 
+    <svg class="create_icon">
+    <use xlink:href="img/svg/sprite.svg#icon-reset"></use></svg>
+     Reload </button>
+                                
+                            </div>
+
+                            <div class="options_container remove_options_container">
+                                <div class="backtooptions">
+                                    <button id="returnToOption" class="light_theme_color"> Quality </button>
+                                </div>
+                                
+                                <div class="value_selector light_theme_color">
+                                <label class="value_checkbox" light_theme_color"="">
+                                <input id="quality_radio" style="display:none" value="-1" name="quality_radio" type="radio">
+                                <span class="checkmark">auto</span>
+                            </label>
+                                <label class="value_checkbox light_theme_color">
+                                    <input id="quality_radio" style="display:none" value="1" name="quality_radio" type="radio">
+                                    <span class="checkmark">1080 p</span>
+                                </label>
+                                
+                                <label class="value_checkbox light_theme_color">
+                                    <input id="quality_radio" style="display:none" value="2" name="quality_radio" type="radio">
+                                    <span class="checkmark">720 p</span>
+                                </label>
+                                
+                                <label class="value_checkbox light_theme_color">
+                                <input id="quality_radio" style="display:none" value="2" name="quality_radio" type="radio">
+                                <span class="checkmark">480 p</span>
+                            </label>
+                            
+                            <label class="value_checkbox light_theme_color">
+                            <input id="quality_radio" style="display:none" value="2" name="quality_radio" type="radio">
+                            <span class="checkmark">260 p</span>
+                        </label>
+                        
+
+                                </div>
+                            
+                            </div>
+                        </div>
+
+   </div>
+       
+        <div class="keypress_container"></div>
+        <div class="loader"></div>
+        
+       <button class="liveStatus" style="display:none" id="liveStatus"> LIVE </button>
+
+                     <div class="control_container">
+                        <div class="top-container">
+                        <div id="seekbar-wrapper">
+                            <div id="tooltip"></div>
+                            <input type="range" max="10605.8" value="0" step="1" class="slider" id="myRange">
+                            <progress id="bufferProgress" max="10605.8" value="120.021333" class="bufferProgress"></progress>
+                            <progress id="playbackProgress" max="10605.8" value="0" class="playbackProgress"></progress>
+                        </div>            
+                    </div>
+                    <div class="bottom-container">
+                    <div class="first_section">
+                    <button id="volumeChange">
+
+                        <svg class="create_icon  bg">
+        <use xlink:href="img/svg/sprite.svg#icon-volume"></use></svg></button>
+        <input type="range" id="volume" max="20" value="20" class="volSeekRange">
+       
+                     
+                </div>
+                <div class="second_section">
+                    <div class="timer" id="curenttime">00:00</div>
+                    <div class="center_control-container">
+                        <button id="seekBackward"><svg class="create_icon">
+                            <use xlink:href="img/svg/sprite.svg#icon-backward"></use></svg>
+                        </button>
+                        <button class="playPause" id="playPause"><svg class="create_icon ">
+                                <use xlink:href="img/svg/sprite.svg#icon-play"></use></svg>
+                        </button>
+                        <button id="seekForward"><svg class="create_icon">
+                                <use xlink:href="img/svg/sprite.svg#icon-forward"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="timer" id="totaltime">02:56:45</div>
+
+               
+                </div>
+                <div class="third_section">
+
+                    <button id="pip"><svg class="create_icon ">
+    <use xlink:href="img/svg/sprite.svg#icon-pip"></use></svg>
+</button>
+                    
+                <button id="settings"><svg class="create_icon  bg">
+                            <use xlink:href="img/svg/sprite.svg#icon-settings"></use></svg>
+                            <div id="hdcontainer"><span class="hd">Auto</span></div>
+                            
+                </button>
+
+                <button id="toogleFullScreen">
+
+                    <svg class="create_icon"><use xlink:href="img/svg/sprite.svg#icon-round-fullscreen-24px"></use></svg>
+                </button>
+                
+                </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+	
+<script>		
+	let config = {
+	seekValue: 10,
+	playBackSpeedList: [0.25, .5, 1, 2],
+	videoid: "538120231115093000",
+	
+	isMobile: undefined,
+	conf: {
+		liveBackBufferLength: 600,
+		maxMaxBufferLength: 120
+	},
+	url: "https://vod-lb04.visionias.co.in/vod_cache/_definst_/smil:https/vision-vod-bucket/vod-assets/538120231115093000.smil/playlist.m3u8?&_hash=jV_YfYbvarWXsvS5pCj0uQh3qdLKOR52QRwSnPdIw9I=&Expires=1744825040&KeyName=key&Signature=vdrZYzzAEIBeQx6bU3VBiqRSzHE=",
+	errorCode: "Opps Something went wrong, pleae reload the page."
+}
+</script>
+<script type="text/javascript" src="./index.js.download"></script>
+
+
+</body></html>

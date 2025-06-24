@@ -6,7 +6,7 @@
   
   <title>Welcome to Front Page</title>
 
-  <!-- edited on 24/06/2025 -->
+  <!-- edited on 24/06/2025 its tuesday -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
